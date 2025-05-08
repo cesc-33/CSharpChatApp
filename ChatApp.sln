@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatProject", "..\ChatProject\ChatProject\ChatProject.csproj", "{CE021D07-A8EB-4F15-8497-D2A42A9E01B5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServer", "..\ChatServer\ChatServer\ChatServer.csproj", "{FCFD1555-4175-4715-93E2-49325409CAEF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{3EDAC691-45D2-462B-BF7C-0B599D8BCD39}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatProject", "ChatProject\ChatProject\ChatProject.csproj", "{0A374801-A8C4-41D2-B057-D1B6FE59C195}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatServer", "ChatServer\ChatServer\ChatServer.csproj", "{C68BADBF-EEFC-4026-851E-DBED19F1C6DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,20 +19,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CE021D07-A8EB-4F15-8497-D2A42A9E01B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE021D07-A8EB-4F15-8497-D2A42A9E01B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE021D07-A8EB-4F15-8497-D2A42A9E01B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE021D07-A8EB-4F15-8497-D2A42A9E01B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FCFD1555-4175-4715-93E2-49325409CAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FCFD1555-4175-4715-93E2-49325409CAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FCFD1555-4175-4715-93E2-49325409CAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FCFD1555-4175-4715-93E2-49325409CAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A374801-A8C4-41D2-B057-D1B6FE59C195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A374801-A8C4-41D2-B057-D1B6FE59C195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A374801-A8C4-41D2-B057-D1B6FE59C195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A374801-A8C4-41D2-B057-D1B6FE59C195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C68BADBF-EEFC-4026-851E-DBED19F1C6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C68BADBF-EEFC-4026-851E-DBED19F1C6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C68BADBF-EEFC-4026-851E-DBED19F1C6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C68BADBF-EEFC-4026-851E-DBED19F1C6DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{CE021D07-A8EB-4F15-8497-D2A42A9E01B5} = {3EDAC691-45D2-462B-BF7C-0B599D8BCD39}
-		{FCFD1555-4175-4715-93E2-49325409CAEF} = {3EDAC691-45D2-462B-BF7C-0B599D8BCD39}
 	EndGlobalSection
 EndGlobal

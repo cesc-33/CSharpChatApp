@@ -72,9 +72,10 @@
             Controls.Add(btnLogin);
             Controls.Add(labelStatus);
             Controls.Add(txtUsername);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(2);
             Name = "ClientForm";
-            Text = "ClientForm";
+            Text = "Chat App";
             ResumeLayout(false);
             PerformLayout();
         }

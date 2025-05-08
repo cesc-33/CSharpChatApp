@@ -36,14 +36,25 @@ namespace ChatServer
                 int bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length);
                 if (bytesRead <= 0) return;
 
-                string username = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim(); //bytes in benutzernamen umwandeln
-                
-                if (string.IsNullOrEmpty(username) || clients.ContainsKey(username))
+                string initialMessage = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim(); //bytes in benutzernamen umwandeln
+                //Client-Anfrage der Usernameliste
+                if (initialMessage.Equals("GET_CLIENTLIST", StringComparison.OrdinalIgnoreCase))
                 {
+                    string clientList = "CLIENTLIST:" + string.Join(",", clients.Keys);
+                    byte[] response = Encoding.UTF8.GetBytes(clientList);
+                    await stream.WriteAsync(response, 0, response.Length);
                     client.Close();
                     return;
                 }
+                //Benutzername des Clienten eintragen
+                string username = initialMessage;
 
+                if (string.IsNullOrEmpty(username) || clients.ContainsKey(username)) 
+                { 
+                    client.Close();
+                    return;
+                }
+                
                 clients[username] = client; //verbundenen Client zur Liste hinzufügen
                 Console.WriteLine($"{username} verbunden");
                 BroadcastClientList(); //Clientliste bei jedem aktualisieren

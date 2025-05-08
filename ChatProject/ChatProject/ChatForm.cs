@@ -25,6 +25,7 @@ namespace ChatProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Text = username;
             ConnectToServer(); //Methode für die Serverbindung
         }
 
