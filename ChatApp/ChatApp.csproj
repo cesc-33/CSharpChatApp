@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<!--https://github.com/dotnet/winforms/blob/main/docs/designer/designer-high-dpi-mode.md-->
+		<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+		<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+		<Version>2.1.1</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\SharedExchange\SharedExchange.csproj" />
+	</ItemGroup>
+
+</Project>
