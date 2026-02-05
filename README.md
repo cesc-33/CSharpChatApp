@@ -1,15 +1,15 @@
 # ChatApp (C# TCP Chat)
-> Aktuelle Version: **v2.1.1** – Juni 2025
+> Aktuelle Version: **v2.1.1** â€“ Juni 2025
 
 Dies ist ein C# Client-Server Chat-Projekt, das im Rahmen meiner Weiterbildung zum Softwareentwickler entstanden ist.  
 Die Anwendung besteht aus zwei Teilen:
-- **ChatProject**: Eine Windows Forms Anwendung für den Chat-Client
-- **ChatServer**: Ein Konsolenserver, der mehrere Clients über TCP/IP verwalten kann
+- **ChatProject**: Eine Windows Forms Anwendung fÃ¼r den Chat-Client
+- **ChatServer**: Ein Konsolenserver, der mehrere Clients Ã¼ber TCP/IP verwalten kann
 
 ## Features
 - TCP-Verbindung mit mehreren Clients
-- Öffentlicher und privater Chat (mit Klick auf User)
-- Ende-zu-Ende-Verschlüsselung mit AES + RSA (Hybrid)
+- Ã–ffentlicher und privater Chat (mit Klick auf User)
+- Ende-zu-Ende-VerschlÃ¼sselung mit AES + RSA (Hybrid)
 - Automatischer AES-Key-Austausch
 - Formatierte Nachrichten (Fett, Kursiv, Unterstrichen)
 - Neue Client-Liste mit Avataren & Hovereffekten
@@ -25,10 +25,6 @@ Die Anwendung besteht aus zwei Teilen:
 - .NET 9.0 SDK
 
 ## CHANGELOG
-
----
-
-> Dieses Projekt wird regelmäßig aktualisiert und erweitert.
 
 ---
 
@@ -61,5 +57,3 @@ The application consists of two parts:
 ## CHANGELOG
 
 ---
-
-> This project is regularly updated and expanded.
